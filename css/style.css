@@ -484,7 +484,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
   .intro-info-img img{
     max-width: 80%;
   }
- /*==================================== Section 2=================================================*/
+ /*====================================Section 2=================================================*/
   .section-2{
     margin-top: 4rem;
   
@@ -534,7 +534,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
     margin-top: 4rem;
 }
 
-/*========================================= Section 3===========================================================*/
+/*=========================================Section 3===========================================================*/
 
 .section-3{
     background: rgba(214, 177, 178, 0.19);
@@ -569,6 +569,199 @@ h1,h2,h3,h4,h5,h6,p,figure{
     line-height: 126.5%;
     margin-top: 2.4rem;
 }
+
+/*================================================Section-4============================*/
+.section-4 {
+    background: linear-gradient(89.88deg, #204253 0.1%, #275871 30.24%, #2D5A71 62.47%, #204253 99.89%);
+    padding: 4rem 0rem;
+}
+
+.section-4 .main-title h1{
+    color: #FFFFFF;
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
+.explanation-section{
+    display: flex;
+    justify-content: center;
+}
+.explanation-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8.4rem;
+   
+}
+.explanation-box-text{
+    max-width: 36.8rem;
+    text-align: center;
+    align-self: center;
+    margin-top: 3.2rem;
+}
+.explanation-box span{
+    color: #FDF6D3;
+    font-weight: 600;
+}
+.explanation-box-text p{
+    font-size: 2.4rem;
+    color: #FFFFFF;
+    font-weight: 300;
+}
+.explanation-box-icon{
+    align-self: center;
+}
+
+/*================================================Section-5============================*/
+
+.section-5 {
+    background: rgba(214, 177, 178, 0.19);
+    padding: 4rem 0;
+}
+.contest-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contest-box-text h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--secondary-color-text);
+    text-transform: uppercase;
+}
+
+.contest-box-img {
+    display: flex;
+    max-width: 42rem;
+    align-content: center;
+}
+.contest-box-text{
+    max-width: 56rem;
+    margin: 6.4rem 0 0 2.4rem;
+}
+.contest-box-text p{
+    font-size: 2.4rem;
+    margin-top: 2.4rem;
+    font-weight: 300;
+}
+.contest-box-text span{
+    font-weight: 600;
+    color: var(--secondary-color-text);
+}
+
+.contest-box-button button{
+    display: block;
+    margin: 5.6rem auto 0 auto;
+    font-size: 2.4rem;
+    line-height: 138%;
+    background: linear-gradient(180deg, #CE5C5F 0%, #C83C33 100%);
+    border-radius: 0.4rem;
+    color: #FFFFFF;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 72.8rem;
+    height: 6.8rem;
+}
+
+/* ============================ Section 6 ====================================*/
+.section-6{
+    padding: 4rem 0;
+}
+.section-6 .main-title h1{
+    max-width: 94rem;
+    margin: 0 auto;
+}
+.cursos-sub-title{
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 8.4rem auto 13.2rem auto;
+    max-width: 120rem;
+}
+.cursos-sub-title span{
+    font-weight: 600;
+    color: var(--secondary-color-text);
+}
+.cursos-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4.8rem;    
+
+}
+.cursos-box-text{
+    max-width: 58rem;
+}
+.cursos-box-text h1{
+    font-size: 4rem;
+    font-weight: 200;
+}
+.cursos-box-text p{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 2.4rem;
+    line-height: 150%;
+}
+.cursos-box-img{
+    margin-left: 8.4rem;
+}
+.cursos-box img img{
+    border-radius: 0.4rem;
+    align-self: center;
+}
+
+/* ============================ Section 7 ====================================*/
+.section-7{
+    background: linear-gradient(79.46deg, #000000 1.36%, rgba(0, 0, 0, 0.74) 67.2%);
+    padding: 4rem 0;
+}
+.ebook-section {
+    display: flex;
+}
+.ebook-title{
+    align-self: center;
+}
+.ebook-title h1{
+    font-size: 4rem;
+    color: #FFFFFF;
+    font-weight: 300;
+    max-width: 70rem;
+}
+.ebook-img{
+    display:flex;
+    justify-content: center;
+}
+
+/* ============================ Section 8 ====================================*/
+.section-8 {
+    padding: 4rem 0;
+}
+.section-8 .main-title{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.recomend-box {
+    display: flex;
+    gap:2.4rem;
+    max-width: 94rem;
+    margin:0 auto;
+}
+.recomend-box-area{
+    margin-top: 6.4rem;
+}
+.recomend-box-text p{
+    font-size: 2.4rem;
+}
+.recomend-box{
+    margin-top: 2.4rem;
+}
+.recomend-box-icon{
+    align-self: center;
+}
+.recomend-box-text span{
+    font-weight: 600;
+    color:var(--secondary-color-text);
+}
+
 
 
 /************ Media query ***************************/
@@ -635,7 +828,62 @@ h1,h2,h3,h4,h5,h6,p,figure{
     .presentation-1-box{
         justify-content: center;
     }
-  }
+
+    .contest-box-img {
+        margin-top: 2.4rem;
+    }
+    .contest-box-text h1{
+        font-size: 2.4rem;
+    }
+    .contest-box-text p{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .contest-box-button button{
+        max-width: 100%;
+        font-size: 1.6rem;
+    }
+    .explanation-box-text p{
+        font-size: 2rem;
+    }
+    
+    .cursos-sub-title{
+        margin: 3.2rem 0;
+    }
+    .cursos-sub-title p{
+        font-size: 1.6rem;
+    }
+    .cursos-box-text {
+        margin-top: 2.4rem;
+    }
+    .cursos-box-text h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .cursos-box-text p{
+        font-size: 1.6rem;
+    }
+    .cursos-box img{
+        max-width: 100%;
+    }
+    .cursos-box-img{
+        margin-left: 0rem;
+    }
+   .ebook-title h1{
+    font-size: 2.4rem;
+    text-align: center;
+   }
+   .ebook-img {
+
+    margin-top: 3.2rem;
+   }
+   .ebook-section{
+    justify-content: center;
+   }
+   .recomend-box-text p{
+    font-size: 1.8rem;
+    }
+}
 
 
   @media screen and (min-width:769px) and (max-width:1024px){
@@ -667,6 +915,30 @@ h1,h2,h3,h4,h5,h6,p,figure{
     }
     .section-1{
         background-image: url("/img/banner-back-768.png");
+    }
+
+    .cursos-box{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cursos-sub-title{
+        margin: 3.2rem 0;
+    }
+   
+    .cursos-box-text {
+        margin-top: 2.4rem;
+        max-width: 100%;
+    }
+    .cursos-box-text h1{
+     
+        text-align: center;
+    }
+  
+    .cursos-box img{
+        max-width: 100%;
+    }
+    .cursos-box-img{
+        margin-left: 0rem;
     }
   }
 
