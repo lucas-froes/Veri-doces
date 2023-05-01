@@ -388,7 +388,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
     color: var(--primary-color-text);
  }
   .section-1{
-    background-image: url("/img/banner\ back.png");
+    background-image: url("../img/banner\ back.png");
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -914,7 +914,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
         font-size: 1.6rem;
     }
     .section-1{
-        background-image: url("/img/banner-back-768.png");
+        background-image: url("../img/banner-back-768.png");
     }
 
     .cursos-box{
