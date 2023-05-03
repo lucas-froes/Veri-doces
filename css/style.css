@@ -388,13 +388,14 @@ h1,h2,h3,h4,h5,h6,p,figure{
     color: var(--primary-color-text);
  }
   .section-1{
-    background: linear-gradient(90deg, #41ABE6 1.79%, #CE5C5F 100%);
-    background-attachment:fixed;
+    background: url(../img/banner\ back.png);
+    background-attachment:scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
     padding-bottom: 4.8rem;
+    
   }
   .main-title h1{
     font-weight: 600;
@@ -762,6 +763,86 @@ h1,h2,h3,h4,h5,h6,p,figure{
     color:var(--secondary-color-text);
 }
 
+/* ============================ Section 9 ====================================*/
+.section-9{
+    background: linear-gradient(90deg, #CE5C5F 0%, #41ABE6 89.24%);
+    padding: 4rem 0;
+}
+.offer-box{
+ display: flex;
+ flex-direction: column;
+ background: rgba(217, 217, 217, 0.19);
+ backdrop-filter: blur(17px);
+ border-radius: 1rem;
+ margin: 0 auto;
+ max-width: 56rem;
+ padding: 6.4rem;
+}
+.offer-box-title h2{
+font-size: 3.2rem;
+color: #FFFFFF;
+font-weight: 200;
+text-align: center;
+}
+.offer-box-title span{
+    color: var(--other-color-text-1);
+    font-weight: 500;
+}
+.offer-box-anual, .offer-box-mensal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offer-box-anual h2, .offer-box-mensal h2{
+ text-transform: uppercase;
+ font-size: 4.8rem;   
+
+ color:#FFFFFF;
+ font-weight: 300;
+ margin-top: 6.4rem;
+}
+
+.offer-box-anual-price, .offer-box-mensal-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1.6rem;
+}
+.offer-box-anual-price p:first-child, .offer-box-mensal-price p:first-child{
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+.offer-box-anual-price p:nth-child(2), .offer-box-mensal-price p:nth-child(2){
+    font-size: 4.8rem;
+    color: #FFFFFF;
+    font-weight: 100;
+
+}
+.offer-box-anual p, .offer-box-mensal p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.offer-box-anual button, 
+.offer-box-mensal button{
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #FFFFFF;
+    border: none;
+    width: 40rem;
+    height: 6.8rem;
+    margin-top: 1.6rem;
+}
+.offer-box-anual button{ 
+    background: linear-gradient(180deg, #CE5C5F 0%, #C83C33 100%);
+}
+.offer-box-mensal button{
+    background: linear-gradient(180deg, #41ABE6 0%, #1282C0 100%);
+}
 
 
 /************ Media query ***************************/
@@ -786,7 +867,9 @@ h1,h2,h3,h4,h5,h6,p,figure{
   } 
 
   @media screen and (max-width:768px){
- 
+    .section-1 {
+        background: url(../img/banner-back-768.png);
+    }
     .intro-info{
         margin-top: 0;
     }
@@ -882,6 +965,16 @@ h1,h2,h3,h4,h5,h6,p,figure{
    }
    .recomend-box-text p{
     font-size: 1.8rem;
+    }
+    .offer-box-title h2{
+        font-size: 2.4rem;
+    }
+    .offer-box{
+        padding: 6.4rem 1.6rem;
+    }
+    .offer-box-anual button, .offer-box-mensal button{
+        max-width: 100%;
+        font-size: 1.6rem;
     }
 }
 
