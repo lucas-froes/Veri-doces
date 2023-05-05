@@ -379,6 +379,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
     --title-2-size:3.2rem;
     --cta-color:#CE5C5F;
   }
+
   .container{
     max-width: 144rem;
     margin: 0 auto;
@@ -404,6 +405,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
     color: var(--primary-color-text);
     text-align: center;
     text-transform: uppercase;
+ 
   }
 
   .header{
@@ -683,18 +685,26 @@ h1,h2,h3,h4,h5,h6,p,figure{
     font-weight: 600;
     color: var(--secondary-color-text);
 }
+.cursos-box-area{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom:0.5px solid #D9D9D9;
+    padding: 2.4rem;
+    cursor: pointer;
+}
 .cursos-box {
     display: flex;
-    justify-content: center;
-    padding-bottom: 4.8rem;    
-
+    padding-bottom: 4.8rem;
+    
 }
 .cursos-box-text{
     max-width: 58rem;
+    margin-right: 3.2rem;
 }
 .cursos-box-text h1{
     font-size: 4rem;
     font-weight: 200;
+    text-transform:capitalize ;
 }
 .cursos-box-text p{
     font-size: 2rem;
@@ -703,11 +713,38 @@ h1,h2,h3,h4,h5,h6,p,figure{
     line-height: 150%;
 }
 .cursos-box-img{
-    margin-left: 8.4rem;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+
 }
-.cursos-box img img{
+.cursos-box-img img{
     border-radius: 0.4rem;
+    max-width: 100%;
     align-self: center;
+}
+.cursos-box-icon img{
+    margin: 0 auto;
+    display: block;
+}
+.cursos-box-conteudo{
+    display: none;
+    flex-direction: column;
+}
+.cursos-box-conteudo h2{
+    font-weight: 100;
+    font-size: 3.2rem;
+    color:var(--primary-color-text);
+    margin-bottom: 2.4rem;
+}
+.cursos-box-conteudo p{
+    font-size: 2rem;
+    font-weight: 200;
+    color:var(--primary-color-text);
+    margin-bottom: 0.8rem;
+}
+.cursos-box-conteudo{
+    margin-bottom: 2.4rem;
 }
 
 /* ============================ Section 7 ====================================*/
@@ -734,7 +771,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
 
 /* ============================ Section 8 ====================================*/
 .section-8 {
-    padding: 4rem 0;
+    padding: 4rem 0 6.4rem 0;
 }
 .section-8 .main-title{
     max-width: 80rem;
@@ -844,7 +881,79 @@ text-align: center;
     background: linear-gradient(180deg, #41ABE6 0%, #1282C0 100%);
 }
 
+/*======================================== Section 10 ==========================================*/
+.section-10{
+    padding: 6.4rem 0;
+    background:rgba(214, 177, 178, 0.19);
+}
+.apresentacao{
+    display: flex;
+    gap:6.4rem;
+}
 
+.apresentacao-img-box {
+
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.apresentacao-text-box .main-title h1{
+    color: var(--secondary-color-text);
+    max-width: 32.4rem;
+    text-align: left;
+}
+.apresentacao-img-box img{
+    max-width: 100%;
+    
+}
+
+.apresentacao-text-box p{
+    font-size: 1.8rem;
+    margin-top: 1.6rem;
+    color:var(--primary-color-text);
+}
+
+/*************************** Section-11******************************/
+.section-11{
+    background-color: #000000;
+    padding: 6.4rem 0;
+}
+.garantia-box{
+    gap:6.4rem
+}
+.garantia-box-text h1,
+.garantia-box-text p, 
+.garantia-box-text span{
+    color: #FFFFFF;
+}
+.garantia-box-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.garantia-box-img img{
+    max-width: 100%;
+    max-height: 41rem;
+}
+.garantia-box-text h1{
+    font-size: 3.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.garantia-box-text span{
+    font-size: 3.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.garantia-box-text p{
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 3.2rem;
+}
+.garantia-box-text p em{
+    font-weight: 600;
+}
 /************ Media query ***************************/
   @media screen and (min-width: 768px) {
 
@@ -940,7 +1049,7 @@ text-align: center;
         margin-top: 2.4rem;
     }
     .cursos-box-text h1{
-        font-size: 2rem;
+        font-size: 2.4rem;
         text-align: center;
     }
     .cursos-box-text p{
@@ -976,6 +1085,34 @@ text-align: center;
         max-width: 100%;
         font-size: 1.6rem;
     }
+    .cursos-box-text{
+        margin-right: 0;
+    }
+    .cursos-box-area{
+        padding: 2.4rem 0rem;
+    }
+  
+    .cursos-box-conteudo h2{
+        font-size: 2.4rem;
+        font-weight: 200;
+    }
+    .cursos-box-conteudo p{
+        font-size: 1.6rem;
+    }
+    .cursos-box{
+        padding-bottom: 2.4rem ;
+    }
+    .apresentacao-text-box p{
+        font-size: 1.6rem;
+    }
+    .garantia-box{
+        justify-content: center;
+    }
+    .garantia-box-img {
+        justify-content: center;
+    }
+    
+ 
 }
 
 
@@ -1030,6 +1167,20 @@ text-align: center;
     .cursos-box-img{
         margin-left: 0rem;
     }
+    .cursos-box-text p{
+        text-align: center;
+    }
+    .apresentacao{
+        flex-direction:column;
+        gap: 3.2rem
+    }
+    .apresentacao-img-box{
+        justify-content: center;
+    }
+    .apresentacao-text-box .main-title h1{
+        text-align: center;
+        margin: 0 auto;
+    }
   }
 
 
@@ -1039,3 +1190,10 @@ text-align: center;
     }
   
  }
+
+ .off-conteudo{
+    display: none;
+  }
+  .on-conteudo{
+    display:flex;
+  }
