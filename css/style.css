@@ -380,7 +380,12 @@ h1,h2,h3,h4,h5,h6,p,figure{
     --title-2-size:3.2rem;
     --cta-color:#CE5C5F;
   }
-
+  button{
+    cursor: pointer;
+  }
+  a{
+    text-decoration: none;
+  }
   .container{
     max-width: 144rem;
     margin: 0 auto;
@@ -388,6 +393,9 @@ h1,h2,h3,h4,h5,h6,p,figure{
   }
  p{
     color: var(--primary-color-text);
+ }
+ .no-wrap{
+  white-space: nowrap;
  }
   .section-1{
     background: url(../img/banner-back-2.jpg);
@@ -446,11 +454,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
     height: 4.8rem;
     border-radius: 0.4rem;
   }
-  button a{
-    text-decoration: none;
-    color:#FFFFFF
   
-  }
  .intro-info {
     margin-top: 2.4rem;
  }
@@ -529,7 +533,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
   .learn-button-cta-contact button {
     margin: 0 auto;
     display: block;
-    width: 90.8rem;
+    max-width: 100%;
     background: linear-gradient(180deg, #009DB3 0%, rgba(0, 157, 179, 0.63) 100%);
     border-radius: 0.4rem;
     font-weight: 600;
@@ -540,6 +544,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
     height: 6.8rem;
     color: #FFFFFF;
     margin-top: 4rem;
+    padding: 0 3.2rem;
 }
 
 /*=========================================Section 3===========================================================*/
@@ -990,6 +995,10 @@ text-align: center;
   font-size: 2.4rem;
   font-weight: 500;
 }
+.duvidas-box .main-title h1 span {
+  color: var(--secondary-color-text);
+  white-space: nowrap;
+}
 .duvidas-accordion-text{
   display: none;
 }
@@ -998,8 +1007,17 @@ text-align: center;
   margin-top: 2.4rem;
 
 }
-
-
+/*================================================== Position absolute==================================*/
+.section-communication{
+  position: fixed;
+  bottom: 3.2rem;
+  right:3.2rem;
+}
+/*================================================== Footer ============================================*/
+footer{
+  background-color: #000000;
+  height: 6.4rem;
+}
 /************ Media query ***************************/
   @media screen and (min-width: 768px) {
 
@@ -1130,6 +1148,9 @@ text-align: center;
     .offer-box{
         padding: 6.4rem 1.6rem;
     }
+    .offer-box a{
+      max-width: 100%;
+    }
     .offer-box-anual button, .offer-box-mensal button{
         max-width: 100%;
         font-size: 1.6rem;
@@ -1146,9 +1167,7 @@ text-align: center;
         font-size: 2.4rem;
         font-weight: 200;
     }
-    .cursos-box-conteudo p{
-        font-size: 1.6rem;
-    }
+    
     .cursos-box{
         padding-bottom: 2.4rem ;
     }
@@ -1161,10 +1180,41 @@ text-align: center;
     .garantia-box-img {
         justify-content: center;
     }
-    
- 
-}
+    .garantia-box-text{
 
+    }
+ 
+    .section-12{
+      padding: 3.2rem 0;
+    }
+    .duvidas-sub-title p{
+      font-size: 1.8rem;
+    }
+    .duvidas-accordion-box{
+      margin-top: 6.4rem;
+    }
+    .duvidas-accordion-title-box{
+      gap: 3.2rem;
+    }
+    .duvidas-accordion-title-box h3{
+      font-size: 1.8rem;
+    }
+    .duvidas-accordion-text p{
+      font-size: 1.6rem;
+    }
+    .section-communication {
+      right: 0.8rem;
+      bottom: 0.8rem;
+    
+    }
+    .communication-icon{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .communication-icon img{
+      max-width: 75%;
+    }
+  }
 
   @media screen and (min-width:769px) and (max-width:1024px){
     .intro-info-text-box h1{
@@ -1229,7 +1279,7 @@ text-align: center;
         margin: 0 auto;
     }
     .cursos-box-area {
-      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -1240,6 +1290,7 @@ text-align: center;
     }
   
  }
+
   .on-conteudo{
     display:flex;
   }
