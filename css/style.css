@@ -353,6 +353,7 @@
   html{
     font-size: 10px;
     font-family: "Montserrat";
+    scroll-behavior: smooth;
 }
 
 .row {
@@ -389,7 +390,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
     color: var(--primary-color-text);
  }
   .section-1{
-    background: url(../img/banner\ back.png);
+    background: url(../img/banner-back-2.jpg);
     background-attachment:scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -436,8 +437,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
     text-transform: uppercase;
     line-height: 138%;
     color: #ffffff;
-    font-weight: 600;
-   
+    font-weight: 600; 
   }
 
   .header-button-cta button{
@@ -445,6 +445,11 @@ h1,h2,h3,h4,h5,h6,p,figure{
     width: 20rem;
     height: 4.8rem;
     border-radius: 0.4rem;
+  }
+  button a{
+    text-decoration: none;
+    color:#FFFFFF
+  
   }
  .intro-info {
     margin-top: 2.4rem;
@@ -803,7 +808,7 @@ h1,h2,h3,h4,h5,h6,p,figure{
 /* ============================ Section 9 ====================================*/
 .section-9{
     background: linear-gradient(90deg, #CE5C5F 0%, #41ABE6 89.24%);
-    padding: 4rem 0;
+    padding: 6.4rem 0;
 }
 .offer-box{
  display: flex;
@@ -867,7 +872,7 @@ text-align: center;
     border-radius: 0.4rem;
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     color: #FFFFFF;
     border: none;
     width: 40rem;
@@ -954,6 +959,47 @@ text-align: center;
 .garantia-box-text p em{
     font-weight: 600;
 }
+/*======================================= Section-12================================*/
+.section-12{
+  padding: 4.0rem;
+}
+.duvidas-sub-title p{
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 4rem auto 0 auto;
+  max-width: 120rem;
+}
+.duvidas-accordion-box{
+  margin-top: 12.4rem;
+}
+.duvidas-accordion {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6.4rem;
+  cursor: pointer;
+
+}
+
+.duvidas-accordion-title-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.duvidas-accordion-title-box h3{
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.duvidas-accordion-text{
+  display: none;
+}
+.duvidas-accordion-text p{
+  font-size: 2.0rem;
+  margin-top: 2.4rem;
+
+}
+
+
 /************ Media query ***************************/
   @media screen and (min-width: 768px) {
 
@@ -1072,6 +1118,9 @@ text-align: center;
    .ebook-section{
     justify-content: center;
    }
+   .recomend-box-area{
+      padding: 0 1.6rem;
+   }
    .recomend-box-text p{
     font-size: 1.8rem;
     }
@@ -1084,6 +1133,7 @@ text-align: center;
     .offer-box-anual button, .offer-box-mensal button{
         max-width: 100%;
         font-size: 1.6rem;
+        padding: 0 1.6rem;
     }
     .cursos-box-text{
         margin-right: 0;
@@ -1167,9 +1217,6 @@ text-align: center;
     .cursos-box-img{
         margin-left: 0rem;
     }
-    .cursos-box-text p{
-        text-align: center;
-    }
     .apresentacao{
         flex-direction:column;
         gap: 3.2rem
@@ -1181,6 +1228,9 @@ text-align: center;
         text-align: center;
         margin: 0 auto;
     }
+    .cursos-box-area {
+      width: 100%;
+    }
   }
 
 
@@ -1190,10 +1240,9 @@ text-align: center;
     }
   
  }
-
- .off-conteudo{
-    display: none;
-  }
   .on-conteudo{
     display:flex;
+  }
+  .on-accordion{
+    display: inline-block;
   }
